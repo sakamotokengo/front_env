@@ -21,6 +21,14 @@ gulp.task('sass',function(){
   .pipe(gulp.dest('dest/assets/css'));
 });
 
+gulp.task('js',function(){
+  gulp.src('src/assets/js/**/*.js')
+  .pipe(plumber({errorHandler: notify.onError('<%- error.message %>')}))
+  .pipe(uglify())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('dest/assets/js'));
+});
+
 gulp.task('html',function(){
   gulp.src('src/**/*.html')
   .pipe(gulp.dest('dest/'));
@@ -48,5 +56,6 @@ gulp.task('default', function() {
   });
   gulp.watch('src/**/*.html', ['html']);
   gulp.watch('src/assets/sass/*.scss', ['sass']);
+  gulp.watch('src/assets/js/**/*.js', ['js']);
   gulp.watch('src/**/*.html', ['reload']);
 });
