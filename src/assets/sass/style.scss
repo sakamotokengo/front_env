@@ -1,9 +1,9 @@
-div {
-  margin: 0 auto;
-  p{
-    float: left;
-    span{
-      color: #000;
-    }
-  }
+a{
+  text-decoration: none;
+  color: inherit
+}
+.cf::after{
+  content: '';
+  display: block;
+  clear: both;
 }
