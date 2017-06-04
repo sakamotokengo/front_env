@@ -9,6 +9,8 @@ var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
+var rimraf = require('rimraf');
+var runsequence = require('run-sequence');
 
 
 gulp.task('sass',function(){
