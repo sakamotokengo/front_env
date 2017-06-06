@@ -7,3 +7,14 @@ a{
   display: block;
   clear: both;
 }
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+}
+.toTop{
+  margin-top: 800px;
+  display: inline-block;
+  background: #0bd;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+}

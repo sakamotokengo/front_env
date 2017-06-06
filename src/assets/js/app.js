@@ -1,3 +1,8 @@
 $(function(){
-  $("a[href^='http://']").attr("target","_blank");
+  $('.toTop').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    },1600);
+    return false;
+  });
 });
