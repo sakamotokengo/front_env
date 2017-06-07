@@ -1,6 +1,3 @@
 $(function(){
-  $(".sampleBox").click(function(){
-    window.location=$(this).find('a').attr('href');
-    return false;
-  });
+  $("tr:even").addClass("add");
 });

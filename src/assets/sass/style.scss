@@ -7,9 +7,7 @@ a{
   display: block;
   clear: both;
 }
-.sampleBox {
-  background: #ffc;
-  padding:10px;
-  cursor: pointer;
-  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
-}
+table { background: #666; }
+tr { background: #fff; }
+td { padding: 5px; }
+.add { background: #ccc; }
