@@ -7,3 +7,22 @@ a{
   display: block;
   clear: both;
 }
+.checkbox,.radio{
+  z-index: -1;
+  position: absolute;
+}
+.CheckBoxLabelClass{
+  background: #fff
+  url("http://www.webcreatorbox.com/sample/images/checkbox.png") no-repeat 2px 0;
+  margin-right: 20px;
+  padding-left: 22px;
+}
+.radiolabel {
+  background: #fff url("http://www.webcreatorbox.com/sample/images/radio.png") no-repeat 2px 0;
+  margin-right:20px;
+  padding-left:22px;
+}
+.LabelSelected,
+.RadioSelected{
+  background-position: 2px bottom;
+}

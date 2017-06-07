@@ -1,15 +1,16 @@
 $(function(){
-  $('textarea').keyup(function(){
-    var counter = $(this).val().length;
-    $('#countUp').text(counter);
-
-    if(counter == 0){
-      $('#countUp').text('0');
+  $('.checkbox').change(function(){
+    if($(this).is(':checked')){
+      $(this).next('label').addClass('LabelSelected');
+    }else{
+      $(this).next('label').removeClass('LabelSelected');
     }
-    if(counter >= 10){
-      $('#countUp').css('color','red');
-    } else{
-      $('#countUp').css('color','#666');
+  });
+  $('.radio').change(function(){
+    if($(this).is(':checked')){
+
+      $('.RadioSelected:not(:checked)').removeClass('RadioSelected');
+      $(this).next('label').addClass('RadioSelected');
     }
   });
 });
