@@ -1,12 +1,15 @@
 $(function(){
-  $(".focus").focus(function(){
-    if(this.value == "キーワードを入力"){
-      $(this).val("").css("color","#f39");
+  $('textarea').keyup(function(){
+    var counter = $(this).val().length;
+    $('#countUp').text(counter);
+
+    if(counter == 0){
+      $('#countUp').text('0');
     }
-  });
-  $(".focus").blur(function(){
-    if(this.value == ""){
-      $(this).val("キーワードを入力").css("color","#969696");
+    if(counter >= 10){
+      $('#countUp').css('color','red');
+    } else{
+      $('#countUp').css('color','#666');
     }
   });
 });
