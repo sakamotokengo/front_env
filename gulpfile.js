@@ -23,9 +23,9 @@ gulp.task('sass',function(){
   .pipe(gulp.dest('dest/assets/css'));
 });
 
-gulp.task('js',function(){
+gulp.task('js', function() {
   gulp.src('src/assets/js/**/*.js')
-  .pipe(plumber({errorHandler: notify.onError('<%- error.message %>')}))
+  .pipe(plumber({errorHandler: notify.onError('<%- error.mesagge %>')}))
   .pipe(uglify())
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('dest/assets/js'));
@@ -39,7 +39,7 @@ gulp.task('html',function(){
 gulp.task('copy',function(){
   gulp.src('src/assets/fonts/**/*')
   .pipe(gulp.dest('dest/assets/fonts'));
-  gulp.src('srcc/assets/img/**/*')
+  gulp.src('src/assets/img/**/*')
   .pipe(gulp.dest('dest/assets/img'));
   gulp.src('src/assets/data/**/*')
   .pipe(gulp.dest('dest/assets/data'));

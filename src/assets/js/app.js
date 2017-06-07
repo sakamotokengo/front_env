@@ -1,5 +1,5 @@
 $(function(){
   $(".deleteBox .delete").click(function(){
-    $(this).parents('deleteBox').animate({opacity: 'hide'}, 'slow');
+    $(this).parents('.deleteBox').animate({opacity: 'hide'}, 'slow');
   });
 });
