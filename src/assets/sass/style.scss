@@ -7,22 +7,18 @@ a{
   display: block;
   clear: both;
 }
-.checkbox,.radio{
-  z-index: -1;
-  position: absolute;
+.open{
+  background: #fa2;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+  padding: 10px;
 }
-.CheckBoxLabelClass{
-  background: #fff
-  url("http://www.webcreatorbox.com/sample/images/checkbox.png") no-repeat 2px 0;
-  margin-right: 20px;
-  padding-left: 22px;
+#slideBox{
+  padding: 10px;
+  border: 1px #ccc solid;
+  display: none;
 }
-.radiolabel {
-  background: #fff url("http://www.webcreatorbox.com/sample/images/radio.png") no-repeat 2px 0;
-  margin-right:20px;
-  padding-left:22px;
-}
-.LabelSelected,
-.RadioSelected{
-  background-position: 2px bottom;
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
 }
