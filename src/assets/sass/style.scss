@@ -7,3 +7,35 @@ a{
   display: block;
   clear: both;
 }
+.tooltip{
+  margin: 100px 0 0;
+  list-style: none;
+  li{
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+    span{
+      background: #ffc;
+      border: 1px solid #fc6;
+      height: 45px;
+      position: absolute;
+      top: -85px;
+      left: 0;
+      text-align: center;
+      padding: 20px 12px 10px;
+      z-index: 2;
+      display: none;
+    }
+  }
+  a{
+    padding: 14px 10px;
+    display: block;
+    font-weight: bold;
+    width: 180px;
+  }
+}
+body {
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+}
