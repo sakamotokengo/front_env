@@ -7,18 +7,20 @@ a{
   display: block;
   clear: both;
 }
-.open{
-  background: #fa2;
-  color: #fff;
-  cursor: pointer;
-  width: 50px;
-  padding: 10px;
-}
-#slideBox{
-  padding: 10px;
+#accordion{
   border: 1px #ccc solid;
-  display: none;
-}
-body {
-  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ",Helvetica,Sans-Serif;
+  border-top: none;
+  width: 500px;
+  dt{
+    background: #ddd;
+    padding: 10px;
+    border-top: 1px #ccc solid;
+    a{
+      color: 000;
+      display: block;
+    }
+  }
+  dd{
+    padding: 10px;
+  }
 }
